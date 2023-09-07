@@ -16,9 +16,9 @@ namespace Proyectoinv.Shared.Entities
         [Required(ErrorMessage = "El campo {0} es obligatorio.")]
         public string Name { get; set; } = null!;
         
-        public DateOnly FechaInicio { get; set; }
+        public DateTime FechaInicio { get; set; }
 
-        public DateOnly FechaFin { get; set; }
+        public DateTime FechaFin { get; set; }
 
         [Display(Name = "NombreLider")]
         [MaxLength(100, ErrorMessage = "El campo {0} debe tener máximo {1} caractéres.")]

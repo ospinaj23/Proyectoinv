@@ -1,9 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Proyectoinv.API.Data;
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<ProyectoinvAPIContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoinvAPIContext") ?? throw new InvalidOperationException("Connection string 'ProyectoinvAPIContext' not found.")));
 
 // Add services to the container.
 
